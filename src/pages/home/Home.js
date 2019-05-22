@@ -1,8 +1,9 @@
 import React from 'react';
+import Banner from './sections/Banner';
 
 const Home = () => (
   <div>
-    <h1>hasan app</h1>
+    <Banner />
   </div>
 );
 

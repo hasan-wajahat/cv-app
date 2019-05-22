@@ -20,7 +20,7 @@ const App = ({ classes }) => (
     <Router>
       <TopBar />
       <Switch>
-        <Route exact="/" component={Home} />
+        <Route path="/" exact component={Home} />
         <Route component={Home} />
       </Switch>
     </Router>

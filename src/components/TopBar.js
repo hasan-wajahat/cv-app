@@ -43,6 +43,13 @@ const TopBar = ({ classes }) => (
     >
       About
     </NavLink>
+    <NavLink
+      to="/work"
+      className={classes.link}
+      activeClassName={classes.activeLink}
+    >
+      Work
+    </NavLink>
   </div>
 );
 
