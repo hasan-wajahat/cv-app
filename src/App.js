@@ -1,26 +1,35 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from 'react-jss';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import TopBar from 'components/TopBar';
+import { BACKGROUND_COLOR, TEXT_COLORS } from 'utility/CssConstants';
+import Home from 'pages/home/Home';
 
 const styles = {
   mainPage: {
     height: '100%',
-    background: '#eef1f5',
+    background: BACKGROUND_COLOR,
     overflow: 'auto',
+    color: TEXT_COLORS.black,
   },
 };
 
 const App = ({ classes }) => (
   <div className={classes.mainPage}>
-    <TopBar />
-    <h1>hasan app</h1>
+    <Router>
+      <TopBar />
+      <Switch>
+        <Route exact="/" component={Home} />
+        <Route component={Home} />
+      </Switch>
+    </Router>
   </div>
 );
 
 App.propTypes = {
   classes: PropTypes.shape({
-    mainPage: PropTypes.object,
+    mainPage: PropTypes.string,
   }).isRequired,
 };
 
