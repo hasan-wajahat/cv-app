@@ -2,29 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from 'react-jss';
 import { NavLink } from 'react-router-dom';
-import { STANDARD_SPACE_LEFT, TEXT_COLORS } from 'utility/CssConstants';
-
-const styles = {
-  container: {
-    padding: '20px',
-    paddingLeft: STANDARD_SPACE_LEFT,
-  },
-  link: {
-    marginRight: '30px',
-    color: TEXT_COLORS.lightBlack,
-    fontWeight: 'bold',
-    textDecoration: 'none',
-    '&:hover': {
-      color: TEXT_COLORS.black,
-    },
-    '& .active': {
-      color: TEXT_COLORS.black,
-    },
-  },
-  activeLink: {
-    color: TEXT_COLORS.black,
-  },
-};
+import styles from './Style';
 
 const TopBar = ({ classes }) => (
   <div className={classes.container}>

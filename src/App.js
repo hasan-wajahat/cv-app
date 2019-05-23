@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from 'react-jss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import TopBar from 'components/TopBar';
+import TopBar from 'components/topBar/TopBar';
 import { BACKGROUND_COLOR, TEXT_COLORS } from 'utility/CssConstants';
 import Home from 'pages/home/Home';
 
