@@ -9,7 +9,7 @@ import LaravelLogo from 'assets/img/laravel-logo.png';
 import GitLogo from 'assets/img/git-logo.png';
 import NodeLogo from 'assets/img/node-logo.png';
 import DockerLogo from 'assets/img/docker-logo.png';
-import Button from 'components/button/Button';
+import Button from 'components/button';
 import styles from './Style';
 
 const Banner = ({ classes }) => (
