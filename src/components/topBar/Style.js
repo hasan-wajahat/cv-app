@@ -1,9 +1,9 @@
-import { STANDARD_SPACE_LEFT, TEXT_COLORS } from 'utility/CssConstants';
+import { STANDARD_COLUMN_MARGIN, TEXT_COLORS } from 'utility/CssConstants';
 
 export default {
   container: {
     padding: '20px',
-    paddingLeft: STANDARD_SPACE_LEFT,
+    paddingLeft: STANDARD_COLUMN_MARGIN,
   },
   link: {
     marginRight: '30px',

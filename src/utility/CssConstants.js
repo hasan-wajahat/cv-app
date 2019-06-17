@@ -1,4 +1,4 @@
-export const STANDARD_SPACE_LEFT = '100px';
+export const STANDARD_COLUMN_MARGIN = '100px';
 
 export const BACKGROUND_COLOR = '#eef1f5';
 
