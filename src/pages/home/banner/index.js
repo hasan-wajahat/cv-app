@@ -1,6 +1,5 @@
 import React from 'react';
-import withStyles from 'react-jss';
-import PropTypes from 'prop-types';
+import { createUseStyles } from 'react-jss';
 import ProfileImage from 'assets/img/girl.png';
 import ReactLogo from 'assets/img/react-logo.png';
 import AngularLogo from 'assets/img/angular-logo.png';
@@ -12,45 +11,41 @@ import DockerLogo from 'assets/img/docker-logo.png';
 import Button from 'components/button';
 import styles from './Style';
 
-const Banner = ({ classes }) => (
-  <div className={classes.banner}>
+const useStyles = createUseStyles(styles);
 
-    <div className={classes.flexContainer}>
-      <div className={classes.details}>
-        <div className={classes.textDetails}>
-          <p>Hello</p>
-          <h2>I&rsquo;m Hasan</h2>
-          <h3>a Senior web Developer</h3>
-          <Button onClick={() => {}}>
-            Hire Me
-          </Button>
+const Banner = () => {
+  const classes = useStyles();
+  return (
+    <div className={classes.banner}>
+
+      <div className={classes.flexContainer}>
+        <div className={classes.details}>
+          <div className={classes.textDetails}>
+            <p>Hello</p>
+            <h2>I&rsquo;m Hasan</h2>
+            <h3>a Senior web Developer</h3>
+            <Button onClick={() => {}}>
+              Hire Me
+            </Button>
+          </div>
+        </div>
+        <div className={classes.image}>
+          <div className={classes.blueBar} />
+          <img src={ProfileImage} alt="" />
         </div>
       </div>
-      <div className={classes.image}>
-        <div className={classes.blueBar} />
-        <img src={ProfileImage} alt="" />
+
+      <div className={classes.skillSet}>
+        <img src={ReactLogo} alt="" />
+        <img src={AngularLogo} alt="" />
+        <img src={ReduxLogo} alt="" />
+        <img src={LaravelLogo} alt="" />
+        <img src={GitLogo} alt="" />
+        <img src={NodeLogo} alt="" />
+        <img src={DockerLogo} alt="" />
       </div>
     </div>
-
-    <div className={classes.skillSet}>
-      <img src={ReactLogo} alt="" />
-      <img src={AngularLogo} alt="" />
-      <img src={ReduxLogo} alt="" />
-      <img src={LaravelLogo} alt="" />
-      <img src={GitLogo} alt="" />
-      <img src={NodeLogo} alt="" />
-      <img src={DockerLogo} alt="" />
-    </div>
-  </div>
-);
-
-Banner.propTypes = {
-  classes: PropTypes.shape({
-    banner: PropTypes.string,
-    details: PropTypes.string,
-    textDetails: PropTypes.string,
-    image: PropTypes.string,
-  }).isRequired,
+  );
 };
 
-export default withStyles(styles)(Banner);
+export default Banner;

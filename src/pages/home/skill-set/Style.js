@@ -13,15 +13,16 @@ export default {
       marginRight: '20px',
     },
   },
-  bigCard: {
+  bigCard: ({ backgroundImage } = {}) => ({
     padding: '40px 30px',
     color: 'white',
+    backgroundImage,
     borderRadius: '10px',
     flexGrow: 1,
-    '& h3': {
+    '& h2': {
       margin: 0,
     },
-  },
+  }),
   learnButton: {
     background: 'transparent',
     borderColor: 'white',
