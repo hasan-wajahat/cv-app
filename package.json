@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://hasan-wajahat.github.io/cv-app",
   "dependencies": {
+    "classnames": "^2.2.6",
     "color": "^3.1.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",

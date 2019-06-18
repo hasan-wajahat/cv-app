@@ -13,6 +13,11 @@ code {
     monospace;
 }
 
+p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
 #root {
   height: 100%;;
 }
