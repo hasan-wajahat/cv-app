@@ -1,14 +1,21 @@
 import { STANDARD_COLUMN_MARGIN, TEXT_COLORS } from 'utility/CssConstants';
+import { minWidthQuery } from 'utility/Generic';
 
 export default {
   container: {
     margin: `0 ${STANDARD_COLUMN_MARGIN}`,
+    [minWidthQuery(1300)]: {
+      maxWidth: '1100px',
+      margin: '0 auto',
+    },
   },
   expertiseText: {
     color: TEXT_COLORS.lightBlack,
   },
   cardRow: {
     display: 'flex',
+    marginBottom: '40px',
+
     '& div:first-child': {
       marginRight: '20px',
     },
@@ -18,7 +25,7 @@ export default {
     color: 'white',
     backgroundImage,
     borderRadius: '10px',
-    flexGrow: 1,
+    flex: '1 1 0',
     '& h2': {
       margin: 0,
     },
