@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "95f7f400c2f834c030e5a6d62b96e4f6",
+    "revision": "84890ecd0fdb51fa32b2785075165292",
     "url": "/cv-app/index.html"
   },
   {
-    "revision": "3be107d7c65c54db5842",
+    "revision": "510d12143ae0b1e431f1",
     "url": "/cv-app/static/css/main.3db47483.chunk.css"
   },
   {
-    "revision": "80de478e3801874d74a1",
-    "url": "/cv-app/static/js/2.da4a8c72.chunk.js"
+    "revision": "9b78b897613090acdce8",
+    "url": "/cv-app/static/js/2.69507ac2.chunk.js"
   },
   {
-    "revision": "3be107d7c65c54db5842",
-    "url": "/cv-app/static/js/main.06bf5e12.chunk.js"
+    "revision": "510d12143ae0b1e431f1",
+    "url": "/cv-app/static/js/main.3dc4a86c.chunk.js"
   },
   {
     "revision": "f8e0dec55cc7f0903dc7",
@@ -41,7 +41,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "ccdc59c5162155d1d454e1115198a607",
-    "url": "/cv-app/static/media/professional-background.ccdc59c5.jpg"
+    "url": "/cv-app/static/media/professional-background-1.ccdc59c5.jpg"
+  },
+  {
+    "revision": "bf80bde814643053d087b45687d87f0e",
+    "url": "/cv-app/static/media/professional-background-2.bf80bde8.jpg"
+  },
+  {
+    "revision": "cc3e9305e7f620a6dd951d55f8bc301e",
+    "url": "/cv-app/static/media/professional-background-3.cc3e9305.jpg"
+  },
+  {
+    "revision": "6e81ab611083466979364a3209cf9cf7",
+    "url": "/cv-app/static/media/professional-background-4.6e81ab61.jpg"
   },
   {
     "revision": "1ebfa17db577b2a8f5aaa4d5f1245eae",

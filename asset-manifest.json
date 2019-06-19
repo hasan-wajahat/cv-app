@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/cv-app/static/css/main.3db47483.chunk.css",
-    "main.js": "/cv-app/static/js/main.06bf5e12.chunk.js",
-    "main.js.map": "/cv-app/static/js/main.06bf5e12.chunk.js.map",
+    "main.js": "/cv-app/static/js/main.3dc4a86c.chunk.js",
+    "main.js.map": "/cv-app/static/js/main.3dc4a86c.chunk.js.map",
     "runtime~main.js": "/cv-app/static/js/runtime~main.1f72d373.js",
     "runtime~main.js.map": "/cv-app/static/js/runtime~main.1f72d373.js.map",
-    "static/js/2.da4a8c72.chunk.js": "/cv-app/static/js/2.da4a8c72.chunk.js",
-    "static/js/2.da4a8c72.chunk.js.map": "/cv-app/static/js/2.da4a8c72.chunk.js.map",
+    "static/js/2.69507ac2.chunk.js": "/cv-app/static/js/2.69507ac2.chunk.js",
+    "static/js/2.69507ac2.chunk.js.map": "/cv-app/static/js/2.69507ac2.chunk.js.map",
     "index.html": "/cv-app/index.html",
-    "precache-manifest.a29b389bcb3d326a5062491a479d4f57.js": "/cv-app/precache-manifest.a29b389bcb3d326a5062491a479d4f57.js",
+    "precache-manifest.1550abeb36b1af9a923e7f41d51e7406.js": "/cv-app/precache-manifest.1550abeb36b1af9a923e7f41d51e7406.js",
     "service-worker.js": "/cv-app/service-worker.js",
     "static/css/main.3db47483.chunk.css.map": "/cv-app/static/css/main.3db47483.chunk.css.map",
     "static/media/docker-logo.png": "/cv-app/static/media/docker-logo.67637761.png",
@@ -16,7 +16,10 @@
     "static/media/git-logo.png": "/cv-app/static/media/git-logo.0bcb32c6.png",
     "static/media/laravel-logo.png": "/cv-app/static/media/laravel-logo.5817d7ee.png",
     "static/media/node-logo.png": "/cv-app/static/media/node-logo.524a08c5.png",
-    "static/media/professional-background.jpg": "/cv-app/static/media/professional-background.ccdc59c5.jpg",
+    "static/media/professional-background-1.jpg": "/cv-app/static/media/professional-background-1.ccdc59c5.jpg",
+    "static/media/professional-background-2.jpg": "/cv-app/static/media/professional-background-2.bf80bde8.jpg",
+    "static/media/professional-background-3.jpg": "/cv-app/static/media/professional-background-3.cc3e9305.jpg",
+    "static/media/professional-background-4.jpg": "/cv-app/static/media/professional-background-4.6e81ab61.jpg",
     "static/media/react-logo.png": "/cv-app/static/media/react-logo.1ebfa17d.png",
     "static/media/redux-logo.png": "/cv-app/static/media/redux-logo.e8869d92.png"
   }
