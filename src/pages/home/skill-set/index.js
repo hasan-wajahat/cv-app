@@ -90,6 +90,7 @@ const SkillSet = () => {
       <VisibilitySensor
         partialVisibility
         onChange={visibility => setVisibility(visibility)}
+        offset={{ top: 80 }}
         active={!isVisible} // disable when once active
       >
         <Fragment>
