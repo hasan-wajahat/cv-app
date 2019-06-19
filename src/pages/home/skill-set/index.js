@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import PropTypes from 'prop-types';
 import VisibilitySensor from 'react-visibility-sensor';
@@ -6,89 +6,113 @@ import Heading from 'components/heading';
 import Button from 'components/button';
 import card1Background from 'assets/img/professional-background-1.jpg';
 import card2Background from 'assets/img/professional-background-2.jpg';
+import card3Background from 'assets/img/professional-background-3.jpg';
+import card4Background from 'assets/img/professional-background-4.jpg';
 import styles from './Style';
 
 const useStyles = createUseStyles(styles);
 
-const BigCard = ({
-  text, colorStart, colorEnd, backgroundUrl,
-}) => {
+const BigCard = ({ cardDetails, animationDirection, isVisible }) => {
   const cardStyles = {
-    backgroundImage: `linear-gradient(to right, ${colorStart}, ${colorEnd}), url(${backgroundUrl})`,
+    backgroundImage: `linear-gradient(to right, ${cardDetails.colorStart}, ${cardDetails.colorEnd}), url(${cardDetails.backgroundUrl})`,
+    // sets animationName in class if isVisible
+    animationDirection: isVisible ? animationDirection : null,
   };
   const classes = useStyles(cardStyles);
 
   return (
     <div className={classes.bigCard}>
-      <h2>{text.heading}</h2>
-      <p>{text.details}</p>
+      <div>
+        <h2>{cardDetails.heading}</h2>
+        <p>{cardDetails.details}</p>
+      </div>
       <Button additionalClass={classes.learnButton} onClick={() => {}}>
-      Learn More
+        Learn More
       </Button>
     </div>
   );
 };
 
 BigCard.propTypes = {
-  text: PropTypes.shape({
+  cardDetails: PropTypes.shape({
     heading: PropTypes.string,
     details: PropTypes.string,
+    colorStart: PropTypes.string.isRequired,
+    colorEnd: PropTypes.string.isRequired,
+    backgroundUrl: PropTypes.string.isRequired,
   }).isRequired,
-  colorStart: PropTypes.string.isRequired,
-  colorEnd: PropTypes.string.isRequired,
-  backgroundUrl: PropTypes.string.isRequired,
+  animationDirection: PropTypes.string.isRequired,
+  isVisible: PropTypes.bool.isRequired,
 };
 
-const CARD_1 = {
-  heading: 'Front-End',
-  details: 'I have built state of the art, performant and responsive web-apps using React and other popular frameworks.',
-};
-
-const CARD_2 = {
-  heading: 'Backend-End',
-  details: 'I have used Laravel and ExpressJS to build all sort of restful API\'s. Also built server rendered sites with frontend frameworks.',
-};
+const CARDS = [
+  {
+    heading: 'Front End',
+    details: 'I have built state of the art, performant and responsive web-apps using React and other popular frameworks.',
+    backgroundUrl: card1Background,
+    colorStart: 'rgba(105, 137, 247)',
+    colorEnd: 'rgba(134, 127, 228, 0.6)',
+  },
+  {
+    heading: 'Backend End',
+    details: 'I have used Laravel and ExpressJS to build all sort of restful API\'s. Also built server rendered sites with frontend frameworks.',
+    backgroundUrl: card2Background,
+    colorStart: 'rgba(50, 102, 238)',
+    colorEnd: 'rgba(80, 195, 183, 0.6)',
+  },
+  {
+    heading: 'Test Coverage',
+    details: 'I am a big believer in testing. In which ever project I work, I always try to get maximum test coverage on front and backend.',
+    backgroundUrl: card3Background,
+    colorStart: 'rgb(83, 109, 254)',
+    colorEnd: 'rgba(92, 107, 192, 0.6)',
+  },
+  {
+    heading: 'Performant Sites',
+    details: 'I excel at making responsive, performant and intuitive web apps.',
+    backgroundUrl: card4Background,
+    colorStart: 'rgb(124, 77, 255)',
+    colorEnd: 'rgba(179, 136, 255, 0.6)',
+  },
+];
 
 const SkillSet = () => {
   const classes = useStyles();
-  const onVisible = isVisible => console.log(isVisible);
+  const [isVisible, setVisibility] = useState(false);
+
   return (
     <div className={classes.container}>
       <Heading text="expertise in" />
       <p className={classes.expertiseText}>
         My expertise are in the following domain
       </p>
-      <VisibilitySensor partialVisibility onChange={onVisible}>
+      {/* sets true if card rows are visible */}
+      <VisibilitySensor
+        partialVisibility
+        onChange={visibility => setVisibility(visibility)}
+        active={!isVisible} // disable when once active
+      >
         <Fragment>
-          <div className={classes.cardRow}>
-            <BigCard
-              text={CARD_1}
-              colorStart="rgba(105, 137, 247)"
-              colorEnd="rgba(134, 127, 228, 0.6)"
-              backgroundUrl={card1Background}
-            />
-            <BigCard
-              text={CARD_2}
-              colorStart="rgba(50, 102, 238)"
-              colorEnd="rgba(80, 195, 183, 0.6)"
-              backgroundUrl={card2Background}
-            />
-          </div>
-
-          <div className={classes.cardRow}>
-            <BigCard
-              text={CARD_1}
-              colorStart="rgba(105, 137, 247)"
-              colorEnd="rgba(134, 127, 228, 0.6)"
-              backgroundUrl={card1Background}
-            />
-            <BigCard
-              text={CARD_2}
-              colorStart="rgba(50, 102, 238)"
-              colorEnd="rgba(80, 195, 183, 0.6)"
-              backgroundUrl={card2Background}
-            />
-          </div>
+          {/*
+            loops through cards to create row,
+            the loop is skipped on odd card,
+            and row created with only with even card
+           */}
+          {CARDS.map((card, index) => (
+            !!(index % 2) && (
+              <div key={card.heading} className={classes.cardRow}>
+                <BigCard
+                  cardDetails={CARDS[index - 1]}
+                  animationDirection="slideRight"
+                  isVisible={isVisible}
+                />
+                <BigCard
+                  cardDetails={card}
+                  animationDirection="slideLeft"
+                  isVisible={isVisible}
+                />
+              </div>
+            )))}
         </Fragment>
       </VisibilitySensor>
     </div>

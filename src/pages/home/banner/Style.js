@@ -44,6 +44,7 @@ export default {
     '& img': {
       width: '500px',
       maxWidth: '100%',
+      minHeight: '500px',
     },
   },
   skillSet: {

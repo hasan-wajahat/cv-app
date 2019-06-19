@@ -20,19 +20,42 @@ export default {
       marginRight: '20px',
     },
   },
-  bigCard: ({ backgroundImage } = {}) => ({
+  bigCard: ({ backgroundImage, animationDirection } = {}) => ({
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
     padding: '40px 30px',
     color: 'white',
     backgroundImage,
     borderRadius: '10px',
     flex: '1 1 0',
+    opacity: animationDirection ? 1 : 0,
+    animationName: animationDirection ? `$${animationDirection}` : undefined,
+    animationDuration: '1s',
     '& h2': {
       margin: 0,
     },
   }),
+  '@keyframes slideRight': {
+    from: {
+      transform: 'translateX(-100%)',
+    },
+    to: {
+      transform: 'translateX(0)',
+    },
+  },
+  '@keyframes slideLeft': {
+    from: {
+      transform: 'translateX(100%)',
+    },
+    to: {
+      transform: 'translateX(0)',
+    },
+  },
   learnButton: {
     background: 'transparent',
     borderColor: 'white',
+    maxWidth: '138px',
     color: 'white',
     marginBottom: 0,
     '&:hover': {
