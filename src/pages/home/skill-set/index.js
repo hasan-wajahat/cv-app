@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { createUseStyles } from 'react-jss';
 import PropTypes from 'prop-types';
+import VisibilitySensor from 'react-visibility-sensor';
 import Heading from 'components/heading';
 import Button from 'components/button';
 import card1Background from 'assets/img/professional-background-1.jpg';
@@ -50,42 +51,46 @@ const CARD_2 = {
 
 const SkillSet = () => {
   const classes = useStyles();
+  const onVisible = isVisible => console.log(isVisible);
   return (
     <div className={classes.container}>
       <Heading text="expertise in" />
       <p className={classes.expertiseText}>
         My expertise are in the following domain
       </p>
+      <VisibilitySensor partialVisibility onChange={onVisible}>
+        <Fragment>
+          <div className={classes.cardRow}>
+            <BigCard
+              text={CARD_1}
+              colorStart="rgba(105, 137, 247)"
+              colorEnd="rgba(134, 127, 228, 0.6)"
+              backgroundUrl={card1Background}
+            />
+            <BigCard
+              text={CARD_2}
+              colorStart="rgba(50, 102, 238)"
+              colorEnd="rgba(80, 195, 183, 0.6)"
+              backgroundUrl={card2Background}
+            />
+          </div>
 
-      <div className={classes.cardRow}>
-        <BigCard
-          text={CARD_1}
-          colorStart="rgba(105, 137, 247)"
-          colorEnd="rgba(134, 127, 228, 0.6)"
-          backgroundUrl={card1Background}
-        />
-        <BigCard
-          text={CARD_2}
-          colorStart="rgba(50, 102, 238)"
-          colorEnd="rgba(80, 195, 183, 0.6)"
-          backgroundUrl={card2Background}
-        />
-      </div>
-
-      <div className={classes.cardRow}>
-        <BigCard
-          text={CARD_1}
-          colorStart="rgba(105, 137, 247)"
-          colorEnd="rgba(134, 127, 228, 0.6)"
-          backgroundUrl={card1Background}
-        />
-        <BigCard
-          text={CARD_2}
-          colorStart="rgba(50, 102, 238)"
-          colorEnd="rgba(80, 195, 183, 0.6)"
-          backgroundUrl={card2Background}
-        />
-      </div>
+          <div className={classes.cardRow}>
+            <BigCard
+              text={CARD_1}
+              colorStart="rgba(105, 137, 247)"
+              colorEnd="rgba(134, 127, 228, 0.6)"
+              backgroundUrl={card1Background}
+            />
+            <BigCard
+              text={CARD_2}
+              colorStart="rgba(50, 102, 238)"
+              colorEnd="rgba(80, 195, 183, 0.6)"
+              backgroundUrl={card2Background}
+            />
+          </div>
+        </Fragment>
+      </VisibilitySensor>
     </div>
   );
 };
