@@ -1,11 +1,11 @@
-import { STANDARD_COLUMN_MARGIN, TEXT_COLORS } from 'utility/CssConstants';
+import { STANDARD_COLUMN_MARGIN, TEXT_COLORS, STANDARD_CONTAINER_MAX_WIDTH } from 'utility/CssConstants';
 import { minWidthQuery } from 'utility/Generic';
 
 export default {
   container: {
     margin: `0 ${STANDARD_COLUMN_MARGIN}`,
     [minWidthQuery(1300)]: {
-      maxWidth: '1100px',
+      maxWidth: STANDARD_CONTAINER_MAX_WIDTH,
       margin: '0 auto',
     },
   },
