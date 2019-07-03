@@ -14,6 +14,9 @@ export default {
       flex: '1 1 0',
     },
   },
+  textContainer: {
+    maxWidth: `calc(${STANDARD_CONTAINER_MAX_WIDTH}/2)`,
+  },
   text: {
     maxWidth: '400px',
     textAlign: 'left',
@@ -34,6 +37,7 @@ export default {
       height: '400px',
       maxHeight: '400px',
       marginRight: '20px',
+
       '&:last-child': {
         paddingRight: '20px',
       },

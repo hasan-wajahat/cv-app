@@ -13,7 +13,7 @@ const LatestWork = () => {
   const classes = useStyles();
   return (
     <div className={classes.container}>
-      <div>
+      <div className={classes.textContainer}>
         <Heading text="Latest Work" additionalClass={classes.heading} />
         <p className={classes.text}>
           For the last couple of years I have been developing high
