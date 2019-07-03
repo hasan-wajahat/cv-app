@@ -1,10 +1,10 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 import Heading from 'components/heading';
-import Image1 from 'assets/img/agent-resources.jpg';
-import Image2 from 'assets/img/reports.jpg';
-import Image3 from 'assets/img/leaderboard.jpg';
-import Image4 from 'assets/img/pending-management.jpg';
+import Image1 from 'assets/img/latest-work/agent-resources.jpg';
+import Image2 from 'assets/img/latest-work/reports.jpg';
+import Image3 from 'assets/img/latest-work/leaderboard.jpg';
+import Image4 from 'assets/img/latest-work/pending-management.jpg';
 import styles from './Style';
 
 const useStyles = createUseStyles(styles);

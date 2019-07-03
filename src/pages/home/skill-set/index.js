@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 import VisibilitySensor from 'react-visibility-sensor';
 import Heading from 'components/heading';
 import Button from 'components/button';
-import card1Background from 'assets/img/professional-background-1.jpg';
-import card2Background from 'assets/img/professional-background-2.jpg';
-import card3Background from 'assets/img/professional-background-3.jpg';
-import card4Background from 'assets/img/professional-background-4.jpg';
+import card1Background from 'assets/img/skill-set/professional-background-1.jpg';
+import card2Background from 'assets/img/skill-set/professional-background-2.jpg';
+import card3Background from 'assets/img/skill-set/professional-background-3.jpg';
+import card4Background from 'assets/img/skill-set/professional-background-4.jpg';
 import styles from './Style';
 
 const useStyles = createUseStyles(styles);

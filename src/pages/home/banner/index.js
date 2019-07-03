@@ -1,13 +1,13 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
-import ProfileImage from 'assets/img/girl.webp';
-import ReactLogo from 'assets/img/react-logo.png';
-import AngularLogo from 'assets/img/angular-logo.png';
-import ReduxLogo from 'assets/img/redux-logo.png';
-import LaravelLogo from 'assets/img/laravel-logo.png';
-import GitLogo from 'assets/img/git-logo.png';
-import NodeLogo from 'assets/img/node-logo.png';
-import DockerLogo from 'assets/img/docker-logo.png';
+import ProfileImage from 'assets/img/banner/girl.webp';
+import ReactLogo from 'assets/img/banner/react-logo.png';
+import AngularLogo from 'assets/img/banner/angular-logo.png';
+import ReduxLogo from 'assets/img/banner/redux-logo.png';
+import LaravelLogo from 'assets/img/banner/laravel-logo.png';
+import GitLogo from 'assets/img/banner/git-logo.png';
+import NodeLogo from 'assets/img/banner/node-logo.png';
+import DockerLogo from 'assets/img/banner/docker-logo.png';
 import Button from 'components/button';
 import styles from './Style';
 
