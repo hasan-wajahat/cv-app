@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d550d9f2887a274a044b8c36008e427b",
+    "revision": "378de1236343b4cd7c645cec2340b021",
     "url": "/cv-app/index.html"
   },
   {
-    "revision": "347a9a707d99947153f8",
+    "revision": "eae80e41c56dbb3d35e6",
     "url": "/cv-app/static/css/main.3db47483.chunk.css"
   },
   {
-    "revision": "9b78b897613090acdce8",
-    "url": "/cv-app/static/js/2.69507ac2.chunk.js"
+    "revision": "9492fb15642072511dcc",
+    "url": "/cv-app/static/js/2.d746a410.chunk.js"
   },
   {
-    "revision": "347a9a707d99947153f8",
-    "url": "/cv-app/static/js/main.f1c9b4b4.chunk.js"
+    "revision": "eae80e41c56dbb3d35e6",
+    "url": "/cv-app/static/js/main.745f36c9.chunk.js"
   },
   {
     "revision": "f8e0dec55cc7f0903dc7",
     "url": "/cv-app/static/js/runtime~main.1f72d373.js"
   },
   {
+    "revision": "285682f55704ef4f210409635a25975c",
+    "url": "/cv-app/static/media/agent-resources.285682f5.jpg"
+  },
+  {
     "revision": "67637761d1293f816ab48c9ac1c1da67",
     "url": "/cv-app/static/media/docker-logo.67637761.png"
   },
   {
-    "revision": "6075a4e0d9db2f1c8c7658f54c17b13e",
-    "url": "/cv-app/static/media/girl.6075a4e0.png"
+    "revision": "764537abb209d70a411f4f622efac7d8",
+    "url": "/cv-app/static/media/girl.764537ab.webp"
   },
   {
     "revision": "0bcb32c6d86cf5aa6cd6bc1435f8665f",
@@ -36,8 +40,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cv-app/static/media/laravel-logo.5817d7ee.png"
   },
   {
+    "revision": "8aba3cda1c201d96965042f5831c21e8",
+    "url": "/cv-app/static/media/leaderboard.8aba3cda.jpg"
+  },
+  {
     "revision": "524a08c5679118e88cde86516e026df3",
     "url": "/cv-app/static/media/node-logo.524a08c5.png"
+  },
+  {
+    "revision": "24c2676fbdc295eed514a540534873c7",
+    "url": "/cv-app/static/media/pending-management.24c2676f.jpg"
   },
   {
     "revision": "ccdc59c5162155d1d454e1115198a607",
@@ -62,5 +74,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e8869d928dcc06894b1881f9cce3624a",
     "url": "/cv-app/static/media/redux-logo.e8869d92.png"
+  },
+  {
+    "revision": "9c51509f9470d71875a8d4976a61bbd1",
+    "url": "/cv-app/static/media/reports.9c51509f.jpg"
   }
 ]);
