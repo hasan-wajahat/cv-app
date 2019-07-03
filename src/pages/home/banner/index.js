@@ -1,6 +1,6 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
-import ProfileImage from 'assets/img/girl.png';
+import ProfileImage from 'assets/img/girl.webp';
 import ReactLogo from 'assets/img/react-logo.png';
 import AngularLogo from 'assets/img/angular-logo.png';
 import ReduxLogo from 'assets/img/redux-logo.png';
