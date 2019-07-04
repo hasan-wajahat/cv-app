@@ -11,7 +11,7 @@ export default {
   },
   imageContainer: {
     '& img': {
-      width: '600px',
+      width: '500px',
       maxWidth: '100%',
     },
   },
