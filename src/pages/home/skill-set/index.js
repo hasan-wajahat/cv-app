@@ -12,10 +12,11 @@ import styles from './Style';
 
 const useStyles = createUseStyles(styles);
 
+// Reusable card component for showing different skill sets
 const BigCard = ({ cardDetails, animationDirection, isVisible }) => {
   const cardStyles = {
     backgroundImage: `linear-gradient(to right, ${cardDetails.colorStart}, ${cardDetails.colorEnd}), url(${cardDetails.backgroundUrl})`,
-    // sets animationName in class if isVisible
+    // sets animationName in class if isVisible, sets keyframe to slideRight or slideLeft
     animationDirection: isVisible ? animationDirection : null,
   };
   const classes = useStyles(cardStyles);
@@ -36,13 +37,13 @@ const BigCard = ({ cardDetails, animationDirection, isVisible }) => {
 BigCard.propTypes = {
   cardDetails: PropTypes.shape({
     heading: PropTypes.string,
-    details: PropTypes.string,
-    colorStart: PropTypes.string.isRequired,
-    colorEnd: PropTypes.string.isRequired,
+    details: PropTypes.string, // text for details
+    colorStart: PropTypes.string.isRequired, // color start for gradient
+    colorEnd: PropTypes.string.isRequired, // color end for gradient
     backgroundUrl: PropTypes.string.isRequired,
   }).isRequired,
-  animationDirection: PropTypes.string.isRequired,
-  isVisible: PropTypes.bool.isRequired,
+  animationDirection: PropTypes.string.isRequired, // slideRight or slideLeft for animation
+  isVisible: PropTypes.bool.isRequired, // set to true when card first visible to add animation
 };
 
 const CARDS = [
@@ -88,8 +89,10 @@ const SkillSet = () => {
       </p>
       {/* sets true if card rows are visible */}
       <VisibilitySensor
+        // starts on partial visiblity
         partialVisibility
         onChange={visibility => setVisibility(visibility)}
+        // add offset so that card are shown once the user has scrolled a little
         offset={{ top: 80 }}
         active={!isVisible} // disable when once active
       >

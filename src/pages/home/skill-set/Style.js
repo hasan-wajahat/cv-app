@@ -29,7 +29,9 @@ export default {
     backgroundImage,
     borderRadius: '10px',
     flex: '1 1 0',
+    // hide initially to have better effect
     opacity: animationDirection ? 1 : 0,
+    // animation only starts once animationName is set
     animationName: animationDirection ? `$${animationDirection}` : undefined,
     animationDuration: '1s',
     '& h2': {

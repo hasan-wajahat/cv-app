@@ -30,6 +30,7 @@ const Banner = () => {
           </div>
         </div>
         <div className={classes.image}>
+          {/* blue bar added to cover area above profile image */}
           <div className={classes.blueBar} />
           <img src={ProfileImage} alt="" />
         </div>
