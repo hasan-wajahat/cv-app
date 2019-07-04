@@ -3,6 +3,7 @@ import Banner from './banner';
 import SkillSet from './skill-set';
 import LatestWork from './latest-work';
 import WhyMe from './why-me';
+import Feedback from './feedback';
 
 const Home = () => (
   <div>
@@ -10,6 +11,7 @@ const Home = () => (
     <SkillSet />
     <LatestWork />
     <WhyMe />
+    <Feedback />
   </div>
 );
 
