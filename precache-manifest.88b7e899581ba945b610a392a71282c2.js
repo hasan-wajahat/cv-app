@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "378de1236343b4cd7c645cec2340b021",
+    "revision": "df0ab9a5567c8b3163cd59a2d9b9f426",
     "url": "/cv-app/index.html"
   },
   {
-    "revision": "eae80e41c56dbb3d35e6",
+    "revision": "9da92cab38677045e6b0",
     "url": "/cv-app/static/css/main.3db47483.chunk.css"
   },
   {
-    "revision": "9492fb15642072511dcc",
-    "url": "/cv-app/static/js/2.d746a410.chunk.js"
+    "revision": "5dbde9ba601b36983112",
+    "url": "/cv-app/static/js/2.8c6c9429.chunk.js"
   },
   {
-    "revision": "eae80e41c56dbb3d35e6",
-    "url": "/cv-app/static/js/main.745f36c9.chunk.js"
+    "revision": "9da92cab38677045e6b0",
+    "url": "/cv-app/static/js/main.f486d72d.chunk.js"
   },
   {
     "revision": "f8e0dec55cc7f0903dc7",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "764537abb209d70a411f4f622efac7d8",
     "url": "/cv-app/static/media/girl.764537ab.webp"
+  },
+  {
+    "revision": "942fc3ccdc44f3d00c524427b8d18000",
+    "url": "/cv-app/static/media/girl_point.942fc3cc.jpg"
   },
   {
     "revision": "0bcb32c6d86cf5aa6cd6bc1435f8665f",
