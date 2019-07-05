@@ -43,7 +43,7 @@ const Feedback = () => {
       <Heading text="From My Employers" />
       <div className={classes.cardContainer}>
         {EMPLOYER_DATA.map(employ => (
-          <div className={classes.card}>
+          <div key={employ.name} className={classes.card}>
             <div className={classes.cardHeading}>
               <div>
                 <img src={employ.image} alt="" />
