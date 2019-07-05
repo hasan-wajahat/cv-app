@@ -8,7 +8,7 @@ export default {
     textAlign: 'center',
 
     '& h2': {
-      margin: '30px 0',
+      margin: '30px 0 20px 0',
       color: TEXT_COLORS.black,
     },
 

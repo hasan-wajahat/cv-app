@@ -24,7 +24,10 @@ const Banner = () => {
             <p>Hello</p>
             <h2>I&rsquo;m Hasan</h2>
             <h3>a Senior web Developer</h3>
-            <Button onClick={() => {}}>
+            <Button onClick={() => {
+              window.location.href = 'mailto:hasan_wajahat@hotmail.com';
+            }}
+            >
               Hire Me
             </Button>
           </div>

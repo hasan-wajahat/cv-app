@@ -30,7 +30,7 @@ const EMPLOYER_DATA = [
     name: 'Jae Kim',
     title: 'CEO Online Hair Saloon',
     image: AnonymousImage,
-    description: 'Hasan is an exceptional freelancer. He\'s 100% fluent in English, well-rounded, and hard-working. He will not BS you with false promises - if there\'s something he\'s not best fit for, he\'ll let you know ahead of time and won\'t waste your time. An outstanding trustworthy freelancer who will not disappoint. Outstanding team-player who meets deadlines',
+    description: 'Hasan is an exceptional freelancer. He\'s 100% fluent in English, well-rounded, and hard-working. He will not BS you with false promises - if there\'s something he\'s not best fit for, he\'ll let you know ahead of time and won\'t waste your time. An outstanding trustworthy freelancer who will not disappoint.',
   },
 ];
 

@@ -16,7 +16,10 @@ const Contact = () => {
       <h2>
         hasan_wajahat@hotmail.com
       </h2>
-      <Button onClick={() => {}}>
+      <Button onClick={() => {
+        window.location.href = 'mailto:hasan_wajahat@hotmail.com';
+      }}
+      >
         Hire Me
       </Button>
     </div>
