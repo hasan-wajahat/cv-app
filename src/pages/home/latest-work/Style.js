@@ -8,7 +8,7 @@ export default {
     // we calculate what auto would be equal if total
     // size width is same as the expertise section
     marginLeft: `calc((100% - ${STANDARD_CONTAINER_MAX_WIDTH})/2)`,
-    marginBottom: '20px',
+    marginBottom: '40px',
     display: 'flex',
     '& >div': {
       flex: '1 1 0',
@@ -31,6 +31,7 @@ export default {
   imageContainer: {
     overflowX: 'auto',
     display: 'flex',
+    paddingBottom: '5px',
     ...blueScrollBar(),
 
     '& img': {

@@ -3,7 +3,7 @@ import { TEXT_COLORS } from 'utility/CssConstants';
 export default {
   container: {
     paddingTop: '20px',
-    marginBottom: '20px',
+    marginBottom: '40px',
     display: 'flex',
     '& >div': {
       flex: '1 1 0',
