@@ -1,4 +1,4 @@
-import { TEXT_COLORS } from 'utility/CssConstants';
+import { TEXT_COLORS, BOX_SHADOW_COLOR } from 'utility/CssConstants';
 
 export default {
   banner: {
@@ -56,6 +56,8 @@ export default {
     borderRadius: '10px',
     position: 'relative',
     bottom: '40px',
+    boxShadow: `0px 0px 2px 2px ${BOX_SHADOW_COLOR}`,
+
     '& img': {
       marginRight: '20px',
       width: '80px',

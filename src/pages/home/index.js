@@ -4,6 +4,7 @@ import SkillSet from './skill-set';
 import LatestWork from './latest-work';
 import WhyMe from './why-me';
 import Feedback from './feedback';
+import Contact from './contact';
 
 const Home = () => (
   <div>
@@ -12,6 +13,7 @@ const Home = () => (
     <LatestWork />
     <WhyMe />
     <Feedback />
+    <Contact />
   </div>
 );
 
