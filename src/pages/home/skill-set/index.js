@@ -56,7 +56,7 @@ const CARDS = [
   },
   {
     heading: 'Backend End',
-    details: 'I have used Laravel and ExpressJS to build all sort of restful API\'s. Also built server rendered sites with frontend frameworks.',
+    details: 'I have used Laravel and ExpressJS to build all sorts of restful API\'s. Also built server rendered sites with frontend frameworks.',
     backgroundUrl: card2Background,
     colorStart: 'rgba(50, 102, 238)',
     colorEnd: 'rgba(80, 195, 183, 0.6)',
@@ -92,8 +92,8 @@ const SkillSet = () => {
         // starts on partial visiblity
         partialVisibility
         onChange={visibility => setVisibility(visibility)}
-        // add offset so that card are shown once the user has scrolled a little
-        offset={{ top: 80 }}
+        // add minTopValue so that card are shown once the user has scrolled a little
+        minTopValue={50}
         active={!isVisible} // disable when once active
       >
         <Fragment>

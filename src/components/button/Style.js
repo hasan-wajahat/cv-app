@@ -14,7 +14,11 @@ export default {
     borderRadius: '4px',
     fontWeight: 'bold',
     '&:hover': {
-      background: Color(TEXT_COLORS.lightBlack).lighten(0.2).hex(),
+      background: Color('white').darken(0.15).hex(),
+    },
+    '&:active': {
+      background: Color('white').darken(0.2).hex(),
+      borderColor: Color(TEXT_COLORS.lightBlack).darken(0.8).hex(),
     },
   },
 };
