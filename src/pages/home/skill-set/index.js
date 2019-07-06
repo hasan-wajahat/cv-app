@@ -8,12 +8,15 @@ import card1Background from 'assets/img/skill-set/professional-background-1.jpg'
 import card2Background from 'assets/img/skill-set/professional-background-2.jpg';
 import card3Background from 'assets/img/skill-set/professional-background-3.jpg';
 import card4Background from 'assets/img/skill-set/professional-background-4.jpg';
+import Modal from 'components/modal';
 import styles from './Style';
 
 const useStyles = createUseStyles(styles);
 
 // Reusable card component for showing different skill sets
-const BigCard = ({ cardDetails, animationDirection, isVisible }) => {
+const BigCard = ({
+  cardDetails, animationDirection, isVisible, onClick,
+}) => {
   const cardStyles = {
     backgroundImage: `linear-gradient(to right, ${cardDetails.colorStart}, ${cardDetails.colorEnd}), url(${cardDetails.backgroundUrl})`,
     // sets animationName in class if isVisible, sets keyframe to slideRight or slideLeft
@@ -27,7 +30,7 @@ const BigCard = ({ cardDetails, animationDirection, isVisible }) => {
         <h2>{cardDetails.heading}</h2>
         <p>{cardDetails.details}</p>
       </div>
-      <Button additionalClass={classes.learnButton} onClick={() => {}}>
+      <Button additionalClass={classes.learnButton} onClick={() => { onClick(true); }}>
         Learn More
       </Button>
     </div>
@@ -44,6 +47,7 @@ BigCard.propTypes = {
   }).isRequired,
   animationDirection: PropTypes.string.isRequired, // slideRight or slideLeft for animation
   isVisible: PropTypes.bool.isRequired, // set to true when card first visible to add animation
+  onClick: PropTypes.func.isRequired,
 };
 
 const CARDS = [
@@ -80,6 +84,7 @@ const CARDS = [
 const SkillSet = () => {
   const classes = useStyles();
   const [isVisible, setVisibility] = useState(false);
+  const [visibleModal, setVisibleModal] = useState(null);
 
   return (
     <div className={classes.container}>
@@ -109,16 +114,24 @@ const SkillSet = () => {
                   cardDetails={CARDS[index - 1]}
                   animationDirection="slideRight"
                   isVisible={isVisible}
+                  onClick={setVisibleModal}
                 />
                 <BigCard
                   cardDetails={card}
                   animationDirection="slideLeft"
                   isVisible={isVisible}
+                  onClick={setVisibleModal}
                 />
               </div>
             )))}
         </Fragment>
       </VisibilitySensor>
+      <Modal
+        open={!!visibleModal}
+        onClose={() => setVisibleModal(null)}
+      >
+        <h1>testing</h1>
+      </Modal>
     </div>
   );
 };

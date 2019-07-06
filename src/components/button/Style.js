@@ -14,10 +14,10 @@ export default {
     borderRadius: '4px',
     fontWeight: 'bold',
     '&:hover': {
-      background: Color('white').darken(0.15).hex(),
+      background: '#F5F5F5',
     },
     '&:active': {
-      background: Color('white').darken(0.2).hex(),
+      background: '#EEEEEE',
       borderColor: Color(TEXT_COLORS.lightBlack).darken(0.8).hex(),
     },
   },
