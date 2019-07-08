@@ -44,9 +44,9 @@ const Banner = () => {
           {/* blue bar added to cover area above profile image */}
           <div className={classes.blueBar} />
           <picture>
-            <source media="(min-width: 660px)" srcSet={ProfileImage} />
-            <source media="(max-width: 659px)" srcSet={ProfileImageSmall} />
-            <source media="(max-width: 659px)" srcSet={ProfileImageSmallBackup} />
+            <source type="image/webp" media="(min-width: 660px)" srcSet={ProfileImage} />
+            <source type="image/webp" media="(max-width: 659px)" srcSet={ProfileImageSmall} />
+            <source type="image/png" media="(max-width: 659px)" srcSet={ProfileImageSmallBackup} />
             <img src={ProfileImageBackup} alt="" />
           </picture>
         </div>

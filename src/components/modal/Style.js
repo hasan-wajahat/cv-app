@@ -31,6 +31,7 @@ export default {
     maxWidth: 'calc(100% - 100px)',
     borderRadius: '10px',
     zIndex: '1010',
+    overflowY: 'auto',
     boxShadow: '0px 0px 2px 2px #E0E0E0',
     transform: 'translate(-50%, -50%)', // centering modal
     animation: '$modalAnimation 0.2s',
