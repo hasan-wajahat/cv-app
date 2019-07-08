@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a59579ad98394678a9d58fb484dc10b3",
+    "revision": "d15186f1a3249dba2af9733549dbb648",
     "url": "/cv-app/index.html"
   },
   {
-    "revision": "a29ab56adadf8972d467",
+    "revision": "1c1733ed37414fd93d99",
     "url": "/cv-app/static/css/main.3db47483.chunk.css"
   },
   {
-    "revision": "dae47650d5f75dc25d92",
-    "url": "/cv-app/static/js/2.c0f6a9e5.chunk.js"
+    "revision": "edffc59ab2683de6a2d4",
+    "url": "/cv-app/static/js/2.7860a3a2.chunk.js"
   },
   {
-    "revision": "a29ab56adadf8972d467",
-    "url": "/cv-app/static/js/main.151e0239.chunk.js"
+    "revision": "1c1733ed37414fd93d99",
+    "url": "/cv-app/static/js/main.aafe1ad7.chunk.js"
   },
   {
     "revision": "f8e0dec55cc7f0903dc7",
@@ -40,16 +40,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cv-app/static/media/docker-logo.67637761.png"
   },
   {
-    "revision": "764537abb209d70a411f4f622efac7d8",
-    "url": "/cv-app/static/media/girl.764537ab.webp"
-  },
-  {
     "revision": "942fc3ccdc44f3d00c524427b8d18000",
     "url": "/cv-app/static/media/girl_point.942fc3cc.jpg"
   },
   {
     "revision": "0bcb32c6d86cf5aa6cd6bc1435f8665f",
     "url": "/cv-app/static/media/git-logo.0bcb32c6.png"
+  },
+  {
+    "revision": "52b67f2cfffb5b32965a23b72abadcc3",
+    "url": "/cv-app/static/media/hasan.52b67f2c.png"
+  },
+  {
+    "revision": "b7596f3ac8b890d0f125aebeafcf820d",
+    "url": "/cv-app/static/media/hasan.b7596f3a.webp"
   },
   {
     "revision": "5817d7eeea556e5e29616da16df7bcc6",
