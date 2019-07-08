@@ -143,7 +143,9 @@ const SkillSet = () => {
         open={skillModal.visible}
         onClose={() => setSkillModal({ visible: false, modal: null })}
       >
-        <skillModal.modal />
+        {skillModal.visible && (
+          <skillModal.modal />
+        )}
       </Modal>
     </div>
   );

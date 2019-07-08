@@ -9,12 +9,15 @@ import GitLogo from 'assets/img/banner/git-logo.png';
 import NodeLogo from 'assets/img/banner/node-logo.png';
 import DockerLogo from 'assets/img/banner/docker-logo.png';
 import Button from 'components/button';
+import useWindowSize from 'hooks/WindowSize';
 import styles from './Style';
 
 const useStyles = createUseStyles(styles);
 
 const Banner = () => {
-  const classes = useStyles();
+  const { width } = useWindowSize();
+  const classes = useStyles(width);
+
   return (
     <div className={classes.banner}>
 
@@ -23,7 +26,9 @@ const Banner = () => {
           <div className={classes.textDetails}>
             <p>Hello</p>
             <h2>I&rsquo;m Hasan</h2>
-            <h3>a Senior web Developer</h3>
+            <h3>A passionate web developer.</h3>
+            <h3>With over 5 years of experience</h3>
+            <h3>developing web apps.</h3>
             <Button onClick={() => {
               window.location.href = 'mailto:hasan_wajahat@hotmail.com';
             }}

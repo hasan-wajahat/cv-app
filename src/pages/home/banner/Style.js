@@ -16,20 +16,24 @@ export default {
     display: 'flex',
     justifyContent: 'center',
   },
-  textDetails: {
+  // we vary size of text based on screen width,
+  // to fill screen
+  textDetails: width => ({
     marginTop: '80px',
     '& p': {
+      fontSize: `${14 * width / 1200}px`,
       color: TEXT_COLORS.lightBlack,
       textTransform: 'uppercase',
     },
     '& h2': {
-      fontSize: '40px',
+      fontSize: `${40 * width / 1200}px`,
       margin: '10px 0',
     },
     '& h3': {
+      fontSize: `${18 * width / 1200}px`,
       fontWeight: 'normal',
     },
-  },
+  }),
   blueBar: {
     position: 'absolute',
     top: '-60px',
