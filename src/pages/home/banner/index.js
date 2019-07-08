@@ -1,6 +1,7 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
-import ProfileImage from 'assets/img/banner/girl.webp';
+import ProfileImage from 'assets/img/banner/hasan.webp';
+import ProfileImageBackup from 'assets/img/banner/hasan.png';
 import ReactLogo from 'assets/img/banner/react-logo.png';
 import AngularLogo from 'assets/img/banner/angular-logo.png';
 import ReduxLogo from 'assets/img/banner/redux-logo.png';
@@ -40,7 +41,10 @@ const Banner = () => {
         <div className={classes.image}>
           {/* blue bar added to cover area above profile image */}
           <div className={classes.blueBar} />
-          <img src={ProfileImage} alt="" />
+          <picture>
+            <source srcSet={ProfileImage} />
+            <img src={ProfileImageBackup} alt="" />
+          </picture>
         </div>
       </div>
 

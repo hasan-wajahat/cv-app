@@ -43,7 +43,7 @@ export default {
     backgroundColor: '#4dc1dd',
   },
   image: {
-    backgroundColor: '#4dc1dd',
+    backgroundImage: 'linear-gradient(to right, #1bafd0, #80d5ee)',
     textAlign: 'center',
     '& img': {
       width: '500px',
