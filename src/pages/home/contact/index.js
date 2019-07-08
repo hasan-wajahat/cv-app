@@ -5,6 +5,7 @@ import {
   FaGithub, FaLinkedin, FaAngellist,
   FaFacebookSquare, FaTwitter,
 } from 'react-icons/fa';
+import cv from 'assets/documents/cv.pdf';
 import styles from './Style';
 
 const ICON_SIZE = 36;
@@ -51,6 +52,9 @@ const Contact = () => {
       >
         Hire Me
       </Button>
+      <a className={classes.downloadLink} href={cv} download>
+        Download CV
+      </a>
 
       <div className={classes.iconRow}>
         {SOCIAL_MEDIAS.map(media => (

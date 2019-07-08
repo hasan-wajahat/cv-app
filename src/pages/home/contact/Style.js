@@ -39,4 +39,24 @@ export default {
       color: lightBlack.darken(0.2).hex(),
     },
   },
+  downloadLink: {
+    border: `1px solid ${TEXT_COLORS.lightBlack}`,
+    color: TEXT_COLORS.black,
+    padding: '15px 30px',
+    minWidth: '130px',
+    textTransform: 'uppercase',
+    margin: '20px 0',
+    borderRadius: '4px',
+    fontSize: '11px',
+    fontWeight: 'bold',
+    textDecoration: 'none',
+    marginLeft: '20px',
+    '&:hover': {
+      background: '#F5F5F5',
+    },
+    '&:active': {
+      background: '#EEEEEE',
+      borderColor: Color(TEXT_COLORS.lightBlack).darken(0.8).hex(),
+    },
+  },
 };
