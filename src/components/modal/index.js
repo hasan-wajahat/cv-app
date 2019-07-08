@@ -11,6 +11,7 @@ const Modal = ({
   open,
   onClose,
   children,
+  width,
   additionalClasses,
 }) => {
   const classes = useStyles();
@@ -23,9 +24,10 @@ const Modal = ({
         className={classNames(classes.container, {
           [additionalClasses.container]: !!additionalClasses.container,
         })}
+        style={{ width: `${width}px` }}
       >
         {children}
-        <div>
+        <div className={classes.buttonContainer}>
           <Button additionalClass={classes.button} onClick={onClose}>
             Close
           </Button>
@@ -38,7 +40,8 @@ const Modal = ({
 Modal.propTypes = {
   open: PropTypes.bool.isRequired,
   onClose: PropTypes.func.isRequired,
-  children: PropTypes.node.isRequired,
+  width: PropTypes.number,
+  children: PropTypes.node,
   additionalClasses: PropTypes.shape({
     container: PropTypes.string,
   }),
@@ -46,6 +49,8 @@ Modal.propTypes = {
 
 Modal.defaultProps = {
   additionalClasses: {},
+  children: null,
+  width: 400,
 };
 
 export default Modal;

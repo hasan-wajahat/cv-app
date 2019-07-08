@@ -27,8 +27,8 @@ export default {
     top: '50%',
     left: '50%',
     padding: '40px',
-    maxHeight: 'calc(100% - 60px)',
-    maxWidth: 'calc(100% - 60px)',
+    maxHeight: 'calc(100% - 100px)',
+    maxWidth: 'calc(100% - 100px)',
     borderRadius: '10px',
     zIndex: '1010',
     boxShadow: '0px 0px 2px 2px #E0E0E0',
@@ -43,6 +43,9 @@ export default {
     to: {
       top: '50%',
     },
+  },
+  buttonContainer: {
+    textAlign: 'center',
   },
   button: {
     marginBottom: 0,
