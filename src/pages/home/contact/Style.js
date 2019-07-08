@@ -1,6 +1,8 @@
 import Color from 'color';
 import { TEXT_COLORS } from 'utility/CssConstants';
+import { maxWidthQuery } from 'utility/Generic';
 
+const MOBILE = '660';
 const lightBlack = Color(TEXT_COLORS.lightBlack);
 
 export default {
@@ -20,6 +22,10 @@ export default {
       fontWeight: '500',
       color: TEXT_COLORS.lightBlack,
     },
+
+    [maxWidthQuery(MOBILE)]: {
+      paddingTop: 0,
+    },
   },
   iconRow: {
     display: 'flex',
@@ -30,6 +36,10 @@ export default {
       marginRight: '80px',
       '&:last-child': {
         marginRight: '0',
+      },
+
+      [maxWidthQuery(MOBILE)]: {
+        marginRight: '20px',
       },
     },
   },
