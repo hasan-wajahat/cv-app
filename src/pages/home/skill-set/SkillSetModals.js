@@ -146,10 +146,19 @@ export const PerformanceModal = () => {
           </a>
         </p>
         <p>
+          I have have made PWA&apos;s as well. Apps that work offline and can be saved.
+          In fact you can reload this app as well offline.
+        </p>
+        <p>
           I use techniques like code-splitting and lazy loading to reduce JS bundle sized and
           improve performance. In order to avoid the possible black hole of npm, I rely
           mostly on native tools and building out things by myself where practical.
           This app is an example of the philosophy.
+        </p>
+        <p>
+          I am a big performance geek, spending time streamlining the app and minimizing extra
+          renders. I frequently use memoization, componentShouldUpdate(), react-developer tools
+          to create fast apps.
         </p>
         <p>
           I build extremely responsive web-apps. As most of the traffic of today is mobile centric,
