@@ -84,6 +84,10 @@ export default {
     },
 
     [maxWidthQuery(360)]: {
+      maxWidth: '140px',
+    },
+
+    [maxWidthQuery(340)]: {
       display: 'none',
     },
 
