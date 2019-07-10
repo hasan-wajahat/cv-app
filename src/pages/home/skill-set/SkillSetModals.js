@@ -147,7 +147,7 @@ export const PerformanceModal = () => {
         </p>
         <p>
           I have have made PWA&apos;s as well. Apps that work offline and can be saved.
-          In fact you can reload this app as well offline.
+          In fact you can reload this app as well offline and add to it your mobile home-screen.
         </p>
         <p>
           I use techniques like code-splitting and lazy loading to reduce JS bundle sized and
