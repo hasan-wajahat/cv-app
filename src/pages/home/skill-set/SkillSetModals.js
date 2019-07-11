@@ -150,10 +150,11 @@ export const PerformanceModal = () => {
           In fact you can reload this app as well offline and add to it your mobile home-screen.
         </p>
         <p>
-          I use techniques like code-splitting and lazy loading to reduce JS bundle sized and
-          improve performance. In order to avoid the possible black hole of npm, I rely
-          mostly on native tools and building out things by myself where practical.
-          This app is an example of the philosophy.
+          I use techniques like code-splitting, lazy loading and tree shaking
+          to reduce JS bundle sizes and improve performance. In order
+          to avoid the possible black hole of npm, I rely mostly on native tools
+          and building out things by myself where practical.
+          This app is an example of that philosophy.
         </p>
         <p>
           I am a big performance geek, spending time streamlining the app and minimizing extra
