@@ -18,7 +18,7 @@ const EMPLOYER_DATA = [
     name: 'Eric Zimmerman',
     title: 'Co-Founder & CEO, XYB',
     image: EricImage,
-    description: 'Hasan has been a pleasure to work with. He is highly motivated and very talented. Great experience overall. Looking forward to working with him on the next project.',
+    description: 'Hasan is a very talented developer. Over the 2+ years we\'ve worked together, he\'s never stopped growing his skill set and exceeding expectations. He\'s always been very conscientious and has taken great cares in both his craft and client satisfaction. I would highly recommend him- his positive attitude and continuous-learning mindset sets him apart as someone I genuinely enjoy working with.',
   },
   {
     name: 'Hyunil Chon',
