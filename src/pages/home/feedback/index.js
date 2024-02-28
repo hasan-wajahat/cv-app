@@ -1,19 +1,12 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 import Heading from 'components/heading';
-import AsafImage from 'assets/img/feedback/asaf.jpg';
 import EricImage from 'assets/img/feedback/eric.jpg';
 import ChunImage from 'assets/img/feedback/chun.jpg';
 import AnonymousImage from 'assets/img/feedback/anonymous.png';
 import styles from './Style';
 
 const EMPLOYER_DATA = [
-  {
-    name: 'Asaf Ebgi',
-    title: 'Co-Founder & CTO, XYB',
-    image: AsafImage,
-    description: 'Hasan has proven himself to be an excellent employee. During his tenure in XYB he has shown tremendous growth and initiative. We have always felt comfortable giving him projects due to his ability to finish tasks allotted to him. Also he has complete grip over all matters related to web technologies.',
-  },
   {
     name: 'Eric Zimmerman',
     title: 'Co-Founder & CEO, XYB',
